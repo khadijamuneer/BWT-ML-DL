@@ -11,21 +11,27 @@ Original file is located at
 
 import datetime
 import csv
-from items import FoodItem  # Import FoodItem class from fooditem.py
+from items import FoodItem 
 
+            #my inventory class 
 class Inventory:
     def __init__(self):
         self.inventory = []
-
+            
+            #i first have my function to add an item. 
+            #this simply uses the append function in python to add whatever item the user entered into the inventory
     def add_item(self, food_item):
         self.inventory.append(food_item)
 
+            #this utilizes our barcode attribute. my function will first check if the item is actually in the inventory.
+            #if it is, it will check if the barcode matches. if the barcode matches, it will assign the new quantity.
     def edit_item(self, barcode, new_quantity):
         for item in self.inventory:
             if item.barcode == barcode:
                 item.quantity = new_quantity
                 break
 
+        #and to delete and item, i checked if the item exists in the inventory or not. if it does, i compared the barcode. if the barcode matches, i used the remove funvtion in python to delete 
     def delete_item(self, barcode):
         for item in self.inventory:
             if item.barcode == barcode:
