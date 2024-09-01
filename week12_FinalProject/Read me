@@ -4,51 +4,34 @@ This project is focused on implementing and comparing two different machine lear
 
 Phase 1: A simple logistic regression model to establish a baseline performance.
 Phase 2: A hybrid Convolutional Neural Network (CNN) model to improve upon the baseline.
+
+
 Problem Statement
 The goal of this project is to classify the Iris flower species based on features like sepal length, sepal width, petal length, and petal width. The dataset consists of three species: Setosa, Versicolor, and Virginica.
 
 Data
 The dataset used in this project is the Iris dataset, a well-known dataset in the machine learning community. It contains 150 samples, with 50 samples for each of the three species. The features include:
+Sepal Length,Sepal Width,Petal Length,Petal Width
 
-Sepal Length
-Sepal Width
-Petal Length
-Petal Width
+
 Setup Guide
 1. Clone the Repository
 To get started, clone the repository to your local machine using Git:
 
-bash
-Copy code
-git clone https://github.com/khadijamuneer/BWT-ML-DL.git
-cd BWT-ML-DL
-2. Create a Virtual Environment (Optional but recommended)
+2. Create a Virtual Environment 
 It's recommended to create a virtual environment to manage dependencies:
 
-bash
-Copy code
-python -m venv venv
-source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 3. Install Dependencies
 Install the necessary Python packages using pip:
 
-bash
-Copy code
-pip install -r requirements.txt
 4. Running the Code
 To run the code for both phases:
-
 Navigate to the appropriate directory (e.g., FinalProject_week12/).
 Run the Python script:
-bash
-Copy code
-python week_12.ipynb
+
 5. Reproducing the Results
-Ensure you have all dependencies installed, then execute the notebook (week_12.ipynb) to reproduce the results.
+Ensure you have all dependencies installed, then execute the notebook
 
 6. Configurations and Environment Variables
 There are no specific environment variables or configurations needed for this project.
 
-Key Results
-Phase 1: The logistic regression model achieved a baseline accuracy of X%.
-Phase 2: The hybrid CNN model improved the accuracy to Y%, demonstrating the effectiveness of deep learning techniques.
